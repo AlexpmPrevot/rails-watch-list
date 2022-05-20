@@ -13,8 +13,11 @@
     <% @lists.each do |list| %>
       <div class="col-6 col-md-4 mb-3">
         <%= link_to list_path(list), class:"text-decoration-none" do %>
-          <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
-            <div class="card-header text-center"> <%= list.name %> </div>
+          <div class="card" style="width: 18rem;">
+            <img src="https://res.cloudinary.com/dunn0xojt/image/upload/v1653044139/rrhrddtnxx7c5rczjuwl.jpg" class="card-img-top" alt="list photo">
+            <div class="card-body">
+              <h5 class="card-title"><%= list.name %></h5>
+            </div>
           </div>
         <% end %>
       </div>
